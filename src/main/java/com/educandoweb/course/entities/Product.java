@@ -89,7 +89,11 @@ public class Product implements Serializable {
 	public void setImgUrl(String imgUrl) {
 		this.imgUrl = imgUrl;
 	}
-
+	
+	public Set<Category> getCategories() {
+	    return categories;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
